@@ -1,0 +1,913 @@
+{
+	"info": {
+		"_postman_id": "8a006542-eacc-475c-8c90-f8af3ff7852c",
+		"name": "GRE-CRUD-OPERATION",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "27567323"
+	},
+	"item": [
+		{
+			"name": "User Table",
+			"item": [
+				{
+					"name": "Add New User Here",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        // \"userid\": 1020,\r\n        \"fullname\": \"trrrrw\",\r\n        \"password\": \"546764\",\r\n        \"userrole\": \"Admin\",\r\n        \"username\": \"sawerrr\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/saveuser"
+					},
+					"response": []
+				},
+				{
+					"name": "get all user details here",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/get"
+					},
+					"response": []
+				},
+				{
+					"name": "Get User By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getuserbyid/1004"
+					},
+					"response": []
+				},
+				{
+					"name": "delete user by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/deletebyid/1008"
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE USER DETAILS",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        // \"userid\": 1005,\r\n        \"fullname\": \"idas\",\r\n        \"password\": \"1104\",\r\n        \"userrole\": \"user\",\r\n        \"username\": \"hit\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/update/1003"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Master Table",
+			"item": [
+				{
+					"name": "ADD NEW MASTERDATA",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        // \"master_id\": 1,\r\n        \"abbreviated_name\": \"M.A.\",\r\n        \"address\": \"PUNE\",\r\n        \"city\": \"PUNE\",\r\n        \"country\": \"IND\",\r\n        \"customer_name\": \"RJ\",\r\n        \"email_id\": \"RJ@ds.COM\",\r\n        \"mobile_no\": \"87855397445\",\r\n        \"notes\": \"NOTHING\",\r\n        \"phone\": \"5412821\",\r\n        \"state\": \"MH\",\r\n        \"zip\": \"411700\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/addMasterData"
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL MASTERDATA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getAllMasterData"
+					},
+					"response": []
+				},
+				{
+					"name": "GET MASTERDATA using masterId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getMasterData/1"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE MASTER  TABLE DATA USING MASTER_ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/deleteMasterData/2"
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE MASTERDATA",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        // \"master_id\": 1,\r\n        \"abbreviated_name\": \"M.M.A\",\r\n        \"address\": \"AAAA\",\r\n        \"city\": \"AAAAA\",\r\n        \"country\": \"IND\",\r\n        \"customer_name\": \"RAJ\",\r\n        \"email_id\": \"RAJ@ds.COM\",\r\n        \"mobile_no\": \"87887997445\",\r\n        \"notes\": \"NOTHING\",\r\n        \"phone\": \"5456467821\",\r\n        \"state\": \"MH\",\r\n        \"zip\": \"411700\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/updateMasterData/3"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FinancialTarget",
+			"item": [
+				{
+					"name": "SAVE NEW  DATA",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"ftid\": 10,\r\n    \"date\": null,\r\n    \"q1\": null,\r\n    \"q2\": null,\r\n    \"q3\": null,\r\n    \"q4\": null,\r\n    \"year_target\": null,\r\n    \"user\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/saveFinancialTarget"
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL DATA LIST",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getAllFinancialTarget"
+					},
+					"response": []
+				},
+				{
+					"name": "GET  DATA ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getftById/4"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DATA USING ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/deleteft/09"
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DATA USING ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"ftid\": 10,\r\n    \"date\": \"2024-01-01\",\r\n    \"q1\": \"51654\",\r\n    \"q2\": \"35522\",\r\n    \"q3\": \"32115\",\r\n    \"q4\": \"54555\",\r\n    \"year_target\": null,\r\n    \"user\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/updateft/1"
+					},
+					"response": []
+				},
+				{
+					"name": "GET DATA USING DATE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getfindDate/2023-01-01/2024-01-01"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Financial target 1",
+			"item": [
+				{
+					"name": "ADD Financial Target 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        // \"targetid1\": 1000,\r\n        \"category\": \"nott\",\r\n        \"location\": \"rwqww\",\r\n        \"apr\": 1100.0,\r\n        \"aug\": 1101.0,\r\n        \"december\": 233.0,\r\n        \"feb\": 233.0,\r\n        \"jan\": 2222.0,\r\n        \"july\": 323.0,\r\n        \"june\": 2323.0,\r\n        \"mar\": 1233.0,\r\n        \"may\": 2322.0,\r\n        \"nov\": 1233.0,\r\n        \"oct\": 3234.0,\r\n        \"sept\": 5464.0,\r\n        \"year_id\": 400,\r\n        \"user_id\": 6554\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/addFanancialTarget"
+					},
+					"response": []
+				},
+				{
+					"name": "get ALL DATA Financial Target1 HERE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getAllFt1Data"
+					},
+					"response": []
+				},
+				{
+					"name": "get Financial Target By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getFinancialTargetById/1000"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Financial Target By Id",
+					"request": {
+						"method": "DELETE",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE  Financial Target By Id",
+					"request": {
+						"method": "PUT",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "financialTarget2",
+			"item": [
+				{
+					"name": "Add Financial Target2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"targetid1\": 1007,\r\n    \"category\": \"nott\",\r\n    \"location\": \"rwqww\",\r\n    \"apr\": 1100.0,\r\n    \"aug\": 1101.0,\r\n    \"december\": 233.0,\r\n    \"feb\": 233.0,\r\n    \"jan\": 2222.0,\r\n    \"july\": 323.0,\r\n    \"june\": 2323.0,\r\n    \"mar\": 1233.0,\r\n    \"may\": 2322.0,\r\n    \"nov\": 1233.0,\r\n    \"oct\": 3234.0,\r\n    \"sept\": 5464.0,\r\n    \"year_id\": 400,\r\n    \"user_id\": 6554\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/addft2Data"
+					},
+					"response": []
+				},
+				{
+					"name": "get all data Financial Target 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getFt2Data"
+					},
+					"response": []
+				},
+				{
+					"name": "get Financial Target data ById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getft2ById/3"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Financial Target 2 ById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/deleteFt2Data/3"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Financial Target 2 By Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        // \"targetid2\": 1,\r\n        \"category\": \"gpp\",\r\n        \"location\": \"IND\",\r\n        \"apr\": 1100.0,\r\n        \"aug\": 1101.0,\r\n        \"december\": 233.0,\r\n        \"feb\": 233.0,\r\n        \"jan\": 2222.0,\r\n        \"july\": 323.0,\r\n        \"june\": 2323.0,\r\n        \"mar\": 1233.0,\r\n        \"may\": 2322.0,\r\n        \"nov\": 1233.0,\r\n        \"oct\": 3234.0,\r\n        \"sept\": 5464.0,\r\n        \"year_id\": 400,\r\n        \"user_id\": 6554\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/updateft2Data/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ProjectValueApproval",
+			"item": [
+				{
+					"name": "Add New Data in ProjectValueApproval",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"pid\": 1000,\r\n        \"account_name\": \"godfsgkuldas\",\r\n        \"after_change\": \"goksdful\",\r\n        \"before_change\": \"gokulpsdfathade\",\r\n        \"date_of_approval\": \"2008-11-11\",\r\n        \"date_of_request\": \"2008-11-10T18:30:00.000+00:00\",\r\n        \"flag\": \"osdfsdakay\",\r\n        \"project_id\": 1234,\r\n        \"ug_id\": \"1011\",\r\n        \"user_id\": 1111,\r\n        \"user_name\": \"gokudasfldas\",\r\n        \"sales_stage\": \"complete\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/addproject"
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL DATA FROM ProjectValueApproval",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getAllDataproject"
+					},
+					"response": []
+				},
+				{
+					"name": "GET DATA USING ID ProjectValueApproval",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getDataByIdproject/1006"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE  DATA USING ID ProjectValueApproval",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/"
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DATA USING ID ProjectValueApproval",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": "http://localhost:8080/api/"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FinancialChangeLog",
+			"item": [
+				{
+					"name": "ADD FINANCIAL CHANGE DATA",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"fclogid\": 1,\r\n    \r\n    \"date\": \"2024-01-01\",\r\n    \"log_date\": \"2024-01-01\",\r\n    \"offshort\":\"45645\",\r\n    \"on_site\": \"154\",\r\n    \"total\": \"1000\",\r\n    \"user\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/savedata"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getFinancialChangeLog"
+					},
+					"response": []
+				},
+				{
+					"name": "GET DATA USING ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getFinancialChangeLogById/1"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DATA USING ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/deleteFinancialChangeLog/9"
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DATA USING ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        // \"fclogid\": 2,\r\n        \"date\": \"2023-01-01T00:00:00.000+00:00\",\r\n        \"log_date\": \"2023-01-01T00:00:00.000+00:00\",\r\n        \"offshort\": 456.0,\r\n        \"on_site\": 15400.0,\r\n        \"total\": 100000.0,\r\n        \"user\": null\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/updateFinancialChangeLog/02"
+					},
+					"response": []
+				},
+				{
+					"name": "USING TWO DATE GET DATA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getfclDate/2023-01-01/2024-01-01"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Notification",
+			"item": [
+				{
+					"name": "ADD NEw DATA",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"notification_id\": 1,\r\n    \"account_name\": \"gadsf\",\r\n    \"after_change\": \"gp\",\r\n    \"before_change\": \"goku\",\r\n    \"created_at\": \"2024-01-01\",\r\n    \"field\": \"jkasdf\",\r\n    \"is_read\": \"sdfga\",\r\n    \"project_id\": \"01\",\r\n    \"user_name\": \"gokull\",\r\n    \"ug_id\": \"05\",\r\n    \"user\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/addNotificationData"
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL DATA LIST",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getNotification"
+					},
+					"response": []
+				},
+				{
+					"name": "GET DATA USING ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getNotificationById/2"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DATA USING ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/deleteNotification/8"
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DATA USING ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        // \"notification_id\": 1,\r\n        \"account_name\": \"HFKHS\",\r\n        \"after_change\": \"USHFKS\",\r\n        \"before_change\": \"HRRU\",\r\n        \"created_at\": null,\r\n        \"field\": null,\r\n        \"is_read\": null,\r\n        \"project_id\": null,\r\n        \"user_name\": null,\r\n        \"ug_id\": null,\r\n        \"user\": null\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/updateNotification/1"
+					},
+					"response": []
+				},
+				{
+					"name": "GET DATE USING DATE",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"startDate\":\"2023-11-01 05:30:00.000000\",\r\n    \"endDate\":\"2024-01-11 05:30:00.000000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/getDataDate"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FinancialYear",
+			"item": [
+				{
+					"name": "SAVE NEW DATA HERE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"financial_id\": 1,\r\n    \"date\": \"2023-11-11\",\r\n    \"offshort\": \"255\",\r\n    \"on_site\": \"515\",\r\n    \"total\": \"24544\",\r\n    \"user\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/addFinancialYear"
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL DATA HERE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getFinancialYear"
+					},
+					"response": []
+				},
+				{
+					"name": "GET DATA USING ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getFinancialYearById/103"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DATA USING ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/"
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DATA USING ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"financial_id\": 1,\r\n    \"date\": \"2023-11-11\",\r\n    \"offshort\": \"25555\",\r\n    \"on_site\": \"51555\",\r\n    \"total\": \"2477544\",\r\n    \"user\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/updatefy/103"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ProjectChangeLog",
+			"item": [
+				{
+					"name": "SAVE NEW DATA",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/addProjectChangeLog"
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL DATA HERE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getProjectChangeLog"
+					},
+					"response": []
+				},
+				{
+					"name": "GET DATA USING ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getProjectChangeLogById/2"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DATA USING ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/deleteProjectChangeLog/3"
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DATA USING ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        // \"pclid\": 4,\r\n        \"account_name\": \"shfdssgf\",\r\n        \"closure_date\": null,\r\n        \"log_date\": null,\r\n        \"opp_date\": null,\r\n        \"p_id\": 11,\r\n        \"percentage_probability\": 0,\r\n        \"project_description\": \"srtwser\",\r\n        \"project_value\": 110,\r\n        \"remark\": \"sdfgdsfg\",\r\n        \"revised_closerdate\": null,\r\n        \"sales_stage\": null,\r\n        \"user\": null\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/updateProjectChangeLog/4"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FinancialTargetChangeLog",
+			"item": [
+				{
+					"name": "SAVE NEW DATA",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"ftclogid\": 4,\r\n    \"date\": \"2024-01-01\",\r\n    \"log_date\": \"2023-11-11\",\r\n    \"q1\": 5445,\r\n    \"q2\": 1654,\r\n    \"q3\": 55465,\r\n    \"q4\": 487,\r\n    \"year_target\": 4657,\r\n    \"user\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/addftcl"
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL DATA HERE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getAllftcl"
+					},
+					"response": []
+				},
+				{
+					"name": "GET DATA USING ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getftclById/10"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DATA USING ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/deleteftcl/6"
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DATA USING ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        // \"ftclogid\": 10,\r\n        \"date\": \"2024-01-01T00:00:00.000+00:00\",\r\n        \"log_date\": \"2023-11-11T00:00:00.000+00:00\",\r\n        \"q1\": 5445.0,\r\n        \"q2\": 1654.0,\r\n        \"q3\": 55465.0,\r\n        \"q4\": 487.0,\r\n        \"year_target\": 4657.0,\r\n        \"user\": null\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/updateftcl/3"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LockingStatus",
+			"item": [
+				{
+					"name": "SAVE NEW DATA",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/addLockingStatus"
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL DATA HERE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/"
+					},
+					"response": []
+				},
+				{
+					"name": "GET DATA USING ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DATA USING ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/"
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DATA USING ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"month\": \"july\",\r\n    \"year\": \"2024\",\r\n    \"islocked\": \"false\",\r\n    \"location\": \"pune\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/updateLockingStatus/2"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Project",
+			"item": [
+				{
+					"name": "ADD NEW  PROJECT DATA",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"project_id\": 1,\r\n    \"project_name\": \"SAFJHASG\",\r\n    \"date_of_request\": \"2024-01-11\",\r\n    \"project_description\": \"HFAKSFJAGJFAFGUWE\",\r\n    \"project_value\": 11000,\r\n    \"created_date\": \"2024-01-15\",\r\n    \"createdby\": \"FDJASGFA\",\r\n    \"revised_closerdate\": null,\r\n    \"date_of_approval\": \"2024-01-15\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/addProject"
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL PROJECT DATA IN TO THE LIST",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getAllProject"
+					},
+					"response": []
+				},
+				{
+					"name": "GET PROJECT DATA USING ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getProjectDataById/5"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE PROJECT DATA USING ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/deleteProject/12"
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE PROJECT DATA USING ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        // \"project_id\": 5,\r\n        \"project_name\": \"QEWRQWRTQW\",\r\n        \"date_of_request\": \"2024-01-11T00:00:00.000+00:00\",\r\n        \"project_description\": \"GQWYQWERUY\",\r\n        \"project_value\": 11000,\r\n        \"created_date\": \"2024-01-15T00:00:00.000+00:00\",\r\n        \"createdby\": \"QWETY \",\r\n        \"revised_closerdate\": null,\r\n        \"date_of_approval\": \"2024-01-15T00:00:00.000+00:00\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/updateProject/5"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

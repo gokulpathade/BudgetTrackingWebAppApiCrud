@@ -1,0 +1,552 @@
+{
+	"info": {
+		"_postman_id": "5f49d13a-c3d7-4c97-9b7a-73c65d40f7e2",
+		"name": "Budget Tracking App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "27567323"
+	},
+	"item": [
+		{
+			"name": "User Table",
+			"item": [
+				{
+					"name": "SAVE NEW DATA",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"userid\": 1,\r\n    \"fullname\": \"gokuldas\",\r\n    \"username\": \"gokul\",\r\n    \"role\": \"admin\",\r\n    \"password\": 1234\r\n  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/saveUser"
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL DATA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getAllUser"
+					},
+					"response": []
+				},
+				{
+					"name": "GET DATA BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getUserById/5"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DATA USING ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/deleteUser/8"
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DATA USING BY ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"userid\": 5,\r\n    \"fullname\": \"gdas\",\r\n    \"username\": \"gokul\",\r\n    \"role\": \"user\",\r\n    \"password\": \"12\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/updateUser/6"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User Information",
+			"item": [
+				{
+					"name": "SAVE NEW DATA",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \r\n    \"address\": \"pune\",\r\n    \"department\": \"meg\",\r\n    \"designation\": \"soft\",\r\n    \"city\": \"pune\",\r\n    \"country\": \"ind\",\r\n    \"email_id\": \"go@vf\",\r\n    \"mobile_no\": 65465461321,\r\n    \"phone\": \"6546453134\",\r\n    \"state\": \"mh\",\r\n    \"zip\": 433314,\r\n    \"user\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/saveUserInfo"
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL DATA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getAllUserInfo"
+					},
+					"response": []
+				},
+				{
+					"name": "GET DATA USING ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getUserInfo/5"
+					},
+					"response": []
+				},
+				{
+					"name": "DEKLETE DATA USING ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/deleteUserInfo/3"
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DATA USING ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"infoid\": 5,\r\n    \"address\": \"baner\",\r\n    \"department\": \"megnxt\",\r\n    \"designation\": \"software\",\r\n    \"city\": \"p\",\r\n    \"country\": \"india\",\r\n    \"email_id\": \"go@vf.com\",\r\n    \"mobile_no\": \"654654321\",\r\n    \"phone\": \"65464531\",\r\n    \"state\": \"maha\",\r\n    \"zip\": \"433314\",\r\n    \"user\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/updateUserInfo/5"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hardware Table",
+			"item": [
+				{
+					"name": "SEVE NEW DATA",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"hw_id\": 1,\r\n    \"hw_name\": \"dsfjg\",\r\n    \"hw_code\": \"h54asd\",\r\n    \"hw_description\": \"jds\",\r\n    \"hw_per_unit_cost\": 2,\r\n    \"hw_qty\": 1,\r\n    \"total_cost\": 545,\r\n    \"date\": \"2024-02-02\",\r\n    \"user\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/saveHW"
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL DATA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getAllHW"
+					},
+					"response": []
+				},
+				{
+					"name": "GET DATA USING ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getHWById/5"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DATA USING ID",
+					"request": {
+						"method": "DELETE",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DATA USING ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"hw_id\": 5,\r\n    \"hw_name\": \"dsfjgasdasdds\",\r\n    \"hw_code\": \"h54aasdasdasdasdsadasdasdasd\",\r\n    \"hw_description\": \"asdfasfdadjds\",\r\n    \"hw_per_unit_cost\": 20.0,\r\n    \"hw_qty\": 10.0,\r\n    \"total_cost\": 545565.0,\r\n    \"date\": \"2024-01-12\",\r\n    \"user\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/updateHWById/7"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Software Table",
+			"item": [
+				{
+					"name": "SEVE NEW DATA",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"sw_id\": 2,\r\n    \"sw_name\": \"fkjgaskh\",\r\n    \"sw_type\": \"sdjfaksjfkas\",\r\n    \"sw_code\": \"asdkfhasf\",\r\n    \"sw_description\": \"sjfklasdf\",\r\n    \"sw_cost_perunit\": 5456,\r\n    \"sw_totalcost\": 6456555,\r\n    \"sw_qty\": 20,\r\n    \"date\": \"2024-01-02\",\r\n    \"user\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/saveSoftwareCost"
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL DATA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getAllSoftwareCost"
+					},
+					"response": []
+				},
+				{
+					"name": "GET DATA USING ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getSoftwareCostById/4"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DATA USING ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/deleteSoftwareCostByid/7"
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DATA USING ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"sw_id\": 4,\r\n    \"sw_name\": \"asdfasfasfakjgaskh\",\r\n    \"sw_type\": \"asdfsasdfasddjfaksjfkas\",\r\n    \"sw_code\": \"asdfadfasdddddsasdkfhasf\",\r\n    \"sw_description\": \"asdfsadfsjfklasdf\",\r\n    \"sw_cost_perunit\": 545226.0,\r\n    \"sw_totalcost\": 66666456555.0,\r\n    \"sw_qty\": 206.0,\r\n    \"date\": \"2024-01-02\",\r\n    \"user\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/updateSoftwareCostById/"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FINANCIAL Budget table",
+			"item": [
+				{
+					"name": "SAVE NEW DATA",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"ftid\": 1,\r\n    \"date\": \"2024-02-02\",\r\n    \"q1\": 6546544,\r\n    \"q2\": 55644,\r\n    \"q3\": 13213,\r\n    \"q4\": 887,\r\n    \"user\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/saveFB"
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL DATA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getAllFB"
+					},
+					"response": []
+				},
+				{
+					"name": "GET DATA BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getFBById/4"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DATA USING ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/deleteFB/4"
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DATA USING BY ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"ftid\": 4,\r\n    \"date\": \"2024-01-22\",\r\n    \"q1\": 544.0,\r\n    \"q2\": 44.0,\r\n    \"q3\": 113.0,\r\n    \"q4\": 87.0,\r\n    \"user\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/updateFB/6"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SALES AND MARKETING",
+			"item": [
+				{
+					"name": "SAVE NEW DATA",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"smid\": 1,\r\n    \"sm_type\": \"dsfhmdkjs\",\r\n    \"sm_place\": \"aksgfjh\",\r\n    \"sm_date\": \"2024-01-11\",\r\n    \"sm_cost\": 654654,\r\n    \"sm_description\": \"xdfgsdfg\",\r\n    \"user\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/saveSalesAndMarketing"
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL DATA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getSalesAndMarketing"
+					},
+					"response": []
+				},
+				{
+					"name": "GET DATA BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getSalesAndMarketingById/6"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DATA USING ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/deleteSalesAndMarketingById/3"
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DATA USING BY ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"smid\": 6,\r\n    \"sm_type\": \"qqwerqdsfhmdkjs\",\r\n    \"sm_place\": \"qreqwreqwreaksgfjh\",\r\n    \"sm_date\": \"2024-01-16\",\r\n    \"sm_cost\": 65004654.0,\r\n    \"sm_description\": \"werwqterte\",\r\n    \"user\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/UpdateSalesAndMarketingById/6"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "OFFICE EXPENSES",
+			"item": [
+				{
+					"name": "SAVE NEW DATA",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"officeitemid\": 1,\r\n    \"itemname\": \"kgjhdfsjkkjha\",\r\n    \"itemtype\": \"abgjhsfjksfgbsfd\",\r\n    \"itemdescription\": \"jhsgjvbjlsa\",\r\n    \"date\": \"2024-01-22\",\r\n    \"item_quantity\": 54,\r\n    \"itemcost\": 4200,\r\n    \"user\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/saveOE"
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL DATA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getAllOE"
+					},
+					"response": []
+				},
+				{
+					"name": "GET DATA BY ID",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DATA USING ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/deleteOEById/13"
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DATA USING BY ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"officeitemid\": 3,\r\n    \"itemname\": \"sdfasdfsdfg\",\r\n    \"itemtype\": \"asdfasdf\",\r\n    \"itemdescription\": \"asdfasdgasfgerwwre\",\r\n    \"date\": \"2024-01-26\",\r\n    \"item_quantity\": 540.0,\r\n    \"itemcost\": 42000.0,\r\n    \"user\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/updateOEById/3"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TRAVEL EXPENSES",
+			"item": [
+				{
+					"name": "Save Data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"travelid\": 1,\r\n    \"from_destination_name\": \"banf\",\r\n    \"to_destination_name\": \"fdljasdjf\",\r\n    \"traveling_type\": \"fsjgnas\",\r\n    \"description\": \"ASDfgasdg\",\r\n    \"cost\": 56156,\r\n    \"date\": \"2024-02-02\",\r\n    \"user\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/saveTravelExpenses"
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL DATA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getAllTravelExpenses"
+					},
+					"response": []
+				},
+				{
+					"name": "GET DATA BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/getTravelExpenses/5"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DATA BY ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/deleteTravelExpenses/13"
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DATA BY ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"travelid\": 5,\r\n    \"from_destination_name\": \"bfdgsanf\",\r\n    \"to_destination_name\": \"sdfgsdfgfdljfasdsfdgjf\",\r\n    \"traveling_type\": \"fgdsfgsdfgfsjgnas\",\r\n    \"description\": \"gsdfgertASDfgasdg\",\r\n    \"cost\": 561654556.0,\r\n    \"date\": \"2024-01-02\",\r\n    \"user\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/updateTravelExpenses/10"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
